@@ -1,0 +1,346 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>casa laya · Guest Guide</title>
+<meta name="description" content="Guest guide for Casa Laya at Sitari, Bacolod — house rules, amenities and local picks.">
+<meta name="theme-color" content="#E8875B">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@1,500;1,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23FBF5EE'/%3E%3Cpath d='M14 52V30a18 18 0 0 1 36 0v22' fill='none' stroke='%23B5543A' stroke-width='5'/%3E%3Ccircle cx='32' cy='40' r='9' fill='%23E8875B'/%3E%3Crect x='14' y='44' width='36' height='8' fill='%23FBF5EE'/%3E%3C/svg%3E">
+<style>
+  :root{
+    --cream:#FBF5EE; --sand:#F3E6D8; --peach:#F6C9A8; --sun:#E8875B;
+    --terracotta:#B5543A; --ink:#2E2420; --muted:#7A6A61; --line:#E7D7C7; --card:#FFFDFA;
+    --radius:18px;
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth;scroll-padding-top:64px}
+  body{margin:0;background:var(--cream);color:var(--ink);font:16px/1.55 Inter,system-ui,sans-serif;-webkit-font-smoothing:antialiased}
+  a{color:var(--terracotta)}
+  .wrap{max-width:640px;margin:0 auto;padding:0 16px}
+
+  /* Hero */
+  header.hero{background:linear-gradient(180deg,#F9D9BF 0%,#F4B48C 55%,#E8875B 100%);padding:44px 16px 64px;text-align:center;color:var(--ink);position:relative;overflow:hidden}
+  header.hero::after{content:"";position:absolute;left:-10%;right:-10%;bottom:-40px;height:80px;background:var(--cream);border-radius:50% 50% 0 0}
+  .logo{width:84px;height:84px;display:block;margin:0 auto 10px}
+  .wordmark{font-family:"Cormorant Garamond",Georgia,serif;font-style:italic;font-weight:600;font-size:46px;line-height:1;margin:0;letter-spacing:.5px}
+  .tagline{margin:8px 0 0;font-size:15px;color:#5B3A2C}
+  .unit{display:inline-block;margin-top:14px;font-size:12px;letter-spacing:.12em;text-transform:uppercase;background:rgba(255,253,250,.6);padding:6px 12px;border-radius:99px}
+
+  /* Nav */
+  nav{position:sticky;top:0;z-index:10;background:rgba(251,245,238,.92);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+  nav .wrap{display:flex;gap:6px;overflow-x:auto;padding:10px 16px;scrollbar-width:none}
+  nav .wrap::-webkit-scrollbar{display:none}
+  nav a{flex:0 0 auto;text-decoration:none;color:var(--ink);font-size:14px;font-weight:500;padding:7px 14px;border-radius:99px;background:var(--sand)}
+  nav a:active,nav a.on{background:var(--terracotta);color:#fff}
+
+  section{padding:28px 0 8px}
+  h2{font-family:"Cormorant Garamond",Georgia,serif;font-style:italic;font-weight:600;font-size:32px;margin:0 0 4px}
+  .sub{color:var(--muted);margin:0 0 16px;font-size:14px}
+
+  .card{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:16px;margin-bottom:12px}
+  .quick{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:-28px;position:relative;z-index:2}
+  .quick .card{margin:0}
+  .quick .wide{grid-column:1/-1}
+  .label{font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);margin:0 0 2px}
+  .big{font-size:18px;font-weight:600;margin:0}
+  .row{display:flex;align-items:center;justify-content:space-between;gap:10px}
+  button.copy{border:0;background:var(--terracotta);color:#fff;font:600 13px Inter,sans-serif;padding:9px 14px;border-radius:99px;cursor:pointer;white-space:nowrap}
+
+  ul.list{list-style:none;margin:0;padding:0}
+  ul.list li{display:flex;gap:12px;padding:12px 0;border-bottom:1px solid var(--line)}
+  ul.list li:last-child{border-bottom:0}
+  .ic{flex:0 0 36px;height:36px;border-radius:10px;background:var(--sand);display:grid;place-items:center;font-size:18px}
+  ul.list strong{display:block;font-weight:600}
+  ul.list span.d{color:var(--muted);font-size:14px}
+
+  .grid{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+  .chip{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:12px;font-size:14px;display:flex;gap:8px;align-items:center}
+
+  .place{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:16px;margin-bottom:10px}
+  .place h3{margin:0;font-size:17px}
+  .meta{display:flex;flex-wrap:wrap;gap:6px;margin:6px 0 8px}
+  .tag{font-size:12px;background:var(--sand);color:#6B4A3B;padding:3px 9px;border-radius:99px}
+  .place p{margin:0 0 10px;color:#4E413A;font-size:15px}
+  .map{font-size:14px;font-weight:600;text-decoration:none}
+
+  .steps{counter-reset:s;list-style:none;padding:0;margin:0}
+  .steps li{counter-increment:s;position:relative;padding:0 0 14px 44px}
+  .steps li::before{content:counter(s);position:absolute;left:0;top:0;width:30px;height:30px;border-radius:50%;background:var(--sun);color:#fff;font-weight:600;display:grid;place-items:center;font-size:14px}
+
+  .note{background:#FFF1E6;border-left:4px solid var(--sun);padding:12px 14px;border-radius:10px;font-size:14px}
+  /* Placeholder marker — search the file for class="fill" and replace before publishing */
+  .fill{background:#FFE58A;color:#5A4300;padding:0 4px;border-radius:4px}
+
+  footer{text-align:center;padding:36px 16px 48px;color:var(--muted);font-size:14px}
+  footer .wordmark{font-size:28px;color:var(--ink)}
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <!-- Sunset arch logo -->
+  <svg class="logo" viewBox="0 0 64 64" aria-hidden="true">
+    <defs><clipPath id="arch"><path d="M14 52V30a18 18 0 0 1 36 0v22z"/></clipPath></defs>
+    <circle cx="32" cy="42" r="10" fill="#FBF5EE" clip-path="url(#arch)"/>
+    <g stroke="#FBF5EE" stroke-width="1.6" opacity=".8" clip-path="url(#arch)">
+      <line x1="16" y1="45" x2="48" y2="45"/><line x1="16" y1="48.5" x2="48" y2="48.5"/>
+    </g>
+    <path d="M14 52V30a18 18 0 0 1 36 0v22" fill="none" stroke="#2E2420" stroke-width="2.6" stroke-linecap="round"/>
+    <line x1="10" y1="52" x2="54" y2="52" stroke="#2E2420" stroke-width="2.6" stroke-linecap="round"/>
+  </svg>
+  <h1 class="wordmark">casa laya</h1>
+  <p class="tagline">Your home to feel free</p>
+  <span class="unit">Unit 1913 · Sitari, Lacson St · Bacolod</span>
+</header>
+
+<main class="wrap">
+
+  <!-- Quick info -->
+  <div class="quick">
+    <div class="card wide">
+      <p class="label">Wi-Fi</p>
+      <div class="row">
+        <div>
+          <p class="big"><span class="fill">NETWORK_NAME</span></p>
+          <p style="margin:0;font-size:14px;color:var(--muted)">Password: <span id="wifipw" class="fill">WIFI_PASSWORD</span></p>
+        </div>
+        <button class="copy" id="copyBtn" type="button">Copy password</button>
+      </div>
+    </div>
+    <div class="card"><p class="label">Check-in</p><p class="big"><span class="fill">2:00 PM</span></p></div>
+    <div class="card"><p class="label">Check-out</p><p class="big"><span class="fill">12:00 NN</span></p></div>
+    <div class="card wide">
+      <p class="label">Your host</p>
+      <div class="row">
+        <p class="big">Ivan</p>
+        <a class="copy" style="text-decoration:none" href="https://m.me/casalaya.stays">Message us</a>
+      </div>
+      <p style="margin:6px 0 0;font-size:14px;color:var(--muted)">Mobile / Viber: <span class="fill">09XX XXX XXXX</span> · IG <a href="https://instagram.com/casalaya.stays">@casalaya.stays</a></p>
+    </div>
+  </div>
+</main>
+
+<nav aria-label="Sections">
+  <div class="wrap">
+    <a href="#rules">House rules</a>
+    <a href="#amenities">Amenities</a>
+    <a href="#eat">Where to eat</a>
+    <a href="#explore">Explore</a>
+    <a href="#around">Getting around</a>
+    <a href="#checkout">Check-out</a>
+  </div>
+</nav>
+
+<main class="wrap">
+
+  <!-- HOUSE RULES -->
+  <section id="rules">
+    <h2>House rules</h2>
+    <p class="sub">A few things to keep Casa Laya lovely for you and the next guest.</p>
+    <div class="card">
+      <ul class="list">
+        <li><div class="ic">🚭</div><div><strong>No smoking or vaping</strong><span class="d">Inside the unit and on the balcony. Building rules apply to all common areas.</span></div></li>
+        <li><div class="ic">👥</div><div><strong>Registered guests only</strong><span class="d">Max of <span class="fill">2</span> guests. Visitors must register at the lobby and leave by <span class="fill">10 PM</span>.</span></div></li>
+        <li><div class="ic">🌙</div><div><strong>Quiet hours: 10 PM – 7 AM</strong><span class="d">Our neighbors live here — please keep music and voices low.</span></div></li>
+        <li><div class="ic">🎉</div><div><strong>No parties or events</strong><span class="d">Sorry, the unit and building aren't set up for gatherings.</span></div></li>
+        <li><div class="ic">🐾</div><div><strong>No pets</strong><span class="d"><span class="fill">Per condo policy.</span></span></div></li>
+        <li><div class="ic">🍈</div><div><strong>No durian</strong><span class="d">The smell lingers for days. Enjoy it at the market instead!</span></div></li>
+        <li><div class="ic">🔑</div><div><strong>Take care of the keycard</strong><span class="d">A replacement fee of <span class="fill">₱___</span> applies if it's lost.</span></div></li>
+        <li><div class="ic">❄️</div><div><strong>Save energy</strong><span class="d">Please switch off the aircon, lights and TV when you head out.</span></div></li>
+        <li><div class="ic">♻️</div><div><strong>Segregate trash</strong><span class="d">Biodegradable and non-biodegradable bins are under the sink. The garbage chute is <span class="fill">beside the elevator</span>.</span></div></li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- AMENITIES -->
+  <section id="amenities">
+    <h2>Amenities</h2>
+    <p class="sub">In your studio</p>
+    <div class="grid">
+      <div class="chip">❄️ Aircon</div>
+      <div class="chip">📶 Fast Wi-Fi</div>
+      <div class="chip">📺 Smart TV + Netflix</div>
+      <div class="chip">🚿 Hot shower</div>
+      <div class="chip">🛏️ Fresh linens</div>
+      <div class="chip">🧴 Towels & toiletries</div>
+      <div class="chip">🍳 Kitchenette</div>
+      <div class="chip">🧊 Refrigerator</div>
+      <div class="chip">♨️ Microwave</div>
+      <div class="chip">☕ Kettle & coffee</div>
+      <div class="chip">💨 Hair dryer</div>
+      <div class="chip">🌇 Balcony</div>
+    </div>
+    <p class="sub" style="margin-top:20px">In the building</p>
+    <div class="card">
+      <ul class="list">
+        <li><div class="ic">🏊</div><div><strong>Swimming pool</strong><span class="d">Open <span class="fill">8 AM – 8 PM</span>. Proper swimwear required; bring your keycard.</span></div></li>
+        <li><div class="ic">🏋️</div><div><strong>Gym</strong><span class="d"><span class="fill">Floor / hours</span></span></div></li>
+        <li><div class="ic">🛒</div><div><strong>Grocery & café downstairs</strong><span class="d">For snacks, water and morning coffee.</span></div></li>
+        <li><div class="ic">🛡️</div><div><strong>24/7 security & lobby desk</strong><span class="d">Reach them for building concerns any time.</span></div></li>
+        <li><div class="ic">🚗</div><div><strong>Parking</strong><span class="d"><span class="fill">Available for a fee — message us ahead.</span></span></div></li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- EAT -->
+  <section id="eat">
+    <h2>Where to eat</h2>
+    <p class="sub">Our favorite tastes of Bacolod, most of them close to home.</p>
+
+    <div class="place">
+      <h3>Manokan Country</h3>
+      <div class="meta"><span class="tag">Chicken inasal</span><span class="tag">Must-try</span><span class="tag">Taxi / Grab</span></div>
+      <p>The home of Bacolod chicken inasal — rows of stalls grilling over charcoal. Order the <em>pecho</em> with garlic rice and drizzle chicken oil on top.</p>
+      <a class="map" href="https://www.google.com/maps/search/?api=1&query=Manokan+Country+SM+City+Bacolod" target="_blank" rel="noopener">Open in Maps →</a>
+    </div>
+
+    <div class="place">
+      <h3>21 Restaurant</h3>
+      <div class="meta"><span class="tag">Batchoy</span><span class="tag">Filipino</span><span class="tag">Lacson St</span></div>
+      <p>A Bacolod classic. Their batchoy and kansi are perfect on a rainy night.</p>
+      <a class="map" href="https://www.google.com/maps/search/?api=1&query=21+Restaurant+Lacson+Bacolod" target="_blank" rel="noopener">Open in Maps →</a>
+    </div>
+
+    <div class="place">
+      <h3>Calea Pastries & Coffee</h3>
+      <div class="meta"><span class="tag">Cakes</span><span class="tag">Dessert</span><span class="tag">Lacson St</span></div>
+      <p>Bacolod's famous cake shop. Try the chocolate mud pie or blueberry cheesecake.</p>
+      <a class="map" href="https://www.google.com/maps/search/?api=1&query=Calea+Pastries+and+Coffee+Bacolod" target="_blank" rel="noopener">Open in Maps →</a>
+    </div>
+
+    <div class="place">
+      <h3>Bob's</h3>
+      <div class="meta"><span class="tag">Café & restaurant</span><span class="tag">Lacson St</span></div>
+      <p>A long-time local favorite for a relaxed sit-down meal and pastries.</p>
+      <a class="map" href="https://www.google.com/maps/search/?api=1&query=Bob's+Lacson+Street+Bacolod" target="_blank" rel="noopener">Open in Maps →</a>
+    </div>
+
+    <div class="place">
+      <h3>Pasalubong run</h3>
+      <div class="meta"><span class="tag">Piaya</span><span class="tag">Napoleones</span><span class="tag">Take-home</span></div>
+      <p>Don't leave without piaya, napoleones and barquillos. Merci and Bongbong's have branches around the city.</p>
+      <a class="map" href="https://www.google.com/maps/search/?api=1&query=pasalubong+Bacolod" target="_blank" rel="noopener">Open in Maps →</a>
+    </div>
+
+    <div class="place">
+      <h3>Robinsons Place Bacolod</h3>
+      <div class="meta"><span class="tag">Mall</span><span class="tag">~5 min walk</span></div>
+      <p>Right around the corner — food court, supermarket, pharmacy and ATMs.</p>
+      <a class="map" href="https://www.google.com/maps/search/?api=1&query=Robinsons+Place+Bacolod" target="_blank" rel="noopener">Open in Maps →</a>
+    </div>
+  </section>
+
+  <!-- EXPLORE -->
+  <section id="explore">
+    <h2>Explore</h2>
+    <p class="sub">From quick city strolls to easy day trips.</p>
+
+    <div class="place">
+      <h3>The Ruins</h3>
+      <div class="meta"><span class="tag">Talisay</span><span class="tag">~20–30 min</span><span class="tag">Go at sunset</span></div>
+      <p>The skeleton of a sugar baron's mansion, sometimes called the Taj Mahal of Negros. Stay until the lights come on.</p>
+      <a class="map" href="https://www.google.com/maps/search/?api=1&query=The+Ruins+Talisay+Negros+Occidental" target="_blank" rel="noopener">Open in Maps →</a>
+    </div>
+
+    <div class="place">
+      <h3>Capitol Park & Lagoon · Negros Museum</h3>
+      <div class="meta"><span class="tag">City</span><span class="tag">Nearby</span></div>
+      <p>A leafy morning walk around the lagoon, then local history and art at the museum. Ayala Malls Capitol Central is across the road.</p>
+      <a class="map" href="https://www.google.com/maps/search/?api=1&query=Negros+Museum+Bacolod" target="_blank" rel="noopener">Open in Maps →</a>
+    </div>
+
+    <div class="place">
+      <h3>San Sebastian Cathedral & Public Plaza</h3>
+      <div class="meta"><span class="tag">Heritage</span><span class="tag">Downtown</span></div>
+      <p>Bacolod's coral-stone cathedral and the plaza where MassKara began.</p>
+      <a class="map" href="https://www.google.com/maps/search/?api=1&query=San+Sebastian+Cathedral+Bacolod" target="_blank" rel="noopener">Open in Maps →</a>
+    </div>
+
+    <div class="place">
+      <h3>Silay heritage houses</h3>
+      <div class="meta"><span class="tag">Silay City</span><span class="tag">~40 min</span><span class="tag">Half day</span></div>
+      <p>Ancestral homes like Balay Negrense, plus El Ideal bakery for guapple pie.</p>
+      <a class="map" href="https://www.google.com/maps/search/?api=1&query=Balay+Negrense+Silay" target="_blank" rel="noopener">Open in Maps →</a>
+    </div>
+
+    <div class="place">
+      <h3>Campuestohan Highland Resort</h3>
+      <div class="meta"><span class="tag">Talisay highlands</span><span class="tag">~1 hr</span><span class="tag">Families</span></div>
+      <p>Cool mountain air, views and rides. Bring a jacket.</p>
+      <a class="map" href="https://www.google.com/maps/search/?api=1&query=Campuestohan+Highland+Resort" target="_blank" rel="noopener">Open in Maps →</a>
+    </div>
+
+    <div class="place">
+      <h3>Mambukal Resort</h3>
+      <div class="meta"><span class="tag">Murcia</span><span class="tag">~1 hr</span><span class="tag">Nature</span></div>
+      <p>Hot springs, waterfalls and forest trails at the foot of the mountains.</p>
+      <a class="map" href="https://www.google.com/maps/search/?api=1&query=Mambukal+Resort+Murcia" target="_blank" rel="noopener">Open in Maps →</a>
+    </div>
+
+    <div class="place">
+      <h3>Lakawon Island</h3>
+      <div class="meta"><span class="tag">Cadiz</span><span class="tag">~2.5 hrs + boat</span><span class="tag">Day trip</span></div>
+      <p>White sand and clear water for a full beach day. Leave early.</p>
+      <a class="map" href="https://www.google.com/maps/search/?api=1&query=Lakawon+Island+Resort" target="_blank" rel="noopener">Open in Maps →</a>
+    </div>
+  </section>
+
+  <!-- GETTING AROUND -->
+  <section id="around">
+    <h2>Getting around</h2>
+    <div class="card">
+      <ul class="list">
+        <li><div class="ic">🚕</div><div><strong>Grab & Maxim</strong><span class="d">The easiest way around. Pin "Sitari, Lacson Street" as your pickup.</span></div></li>
+        <li><div class="ic">🚐</div><div><strong>Jeepneys</strong><span class="d">Lacson St routes run north–south past the building. Have small bills ready.</span></div></li>
+        <li><div class="ic">✈️</div><div><strong>Bacolod–Silay Airport</strong><span class="d">About 16 km — allow 30–45 minutes.</span></div></li>
+      </ul>
+    </div>
+    <div class="note"><strong>Emergency:</strong> dial 911. Nearest hospital: <span class="fill">HOSPITAL NAME</span>. Building security: <span class="fill">LOBBY NUMBER</span>.</div>
+  </section>
+
+  <!-- CHECKOUT -->
+  <section id="checkout">
+    <h2>Before you go</h2>
+    <p class="sub">Check-out is at <span class="fill">12:00 NN</span>. Need a late check-out? Message us — we'll try!</p>
+    <div class="card">
+      <ol class="steps">
+        <li>Gather your things — check the closet, bathroom and charger outlets.</li>
+        <li>Put used towels in the bathroom and trash in the bins.</li>
+        <li>Turn off the aircon, lights and TV.</li>
+        <li>Our housekeeper will do a quick walkthrough of the unit with you.</li>
+        <li>Settle any remaining balance via GCash, BPI or Metrobank, and hand over the keycard.</li>
+      </ol>
+    </div>
+    <div class="note">Loved your stay? A review on Airbnb or a tag on Instagram <a href="https://instagram.com/casalaya.stays">@casalaya.stays</a> means the world to us. Salamat! 🧡</div>
+  </section>
+</main>
+
+<footer>
+  <div class="wordmark">casa laya</div>
+  <p>Your home to feel free</p>
+</footer>
+
+<script>
+  // Copy Wi-Fi password
+  const btn = document.getElementById('copyBtn');
+  btn.addEventListener('click', async () => {
+    const pw = document.getElementById('wifipw').textContent.trim();
+    try { await navigator.clipboard.writeText(pw); btn.textContent = 'Copied!'; }
+    catch { btn.textContent = pw; }
+    setTimeout(() => btn.textContent = 'Copy password', 1800);
+  });
+  // Highlight active section in nav
+  const links = [...document.querySelectorAll('nav a')];
+  const io = new IntersectionObserver(entries => {
+    entries.forEach(e => {
+      if (e.isIntersecting) links.forEach(a => a.classList.toggle('on', a.getAttribute('href') === '#' + e.target.id));
+    });
+  }, { rootMargin: '-40% 0px -55% 0px' });
+  document.querySelectorAll('section[id]').forEach(s => io.observe(s));
+</script>
+</body>
+</html>
